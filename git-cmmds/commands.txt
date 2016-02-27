@@ -1,0 +1,83 @@
+*
+* 1 git@github.com:username/reponame.git
+* 2 https://username@github.com/username/reponame.git
+*---------------------------------------------------------------
+* 3 git config --global user.name "YourFullName"
+* 4 git config --global user.email myemail@mail.ru
+*---------------------------------------------------------------
+* 5 git init
+*   git add .
+*   git commit -a -m 'first commit'
+*   git remote add origin git@github.com:username/reponame.git
+*   git push -u origin master
+*
+*
+* 6 mkdir github
+*   cd github   ~ creaza folder github in C:\Documents and Settings\malysh
+*   ls
+*   mkdir chuchnorris ~ creaza folder chucknorris
+*   cd chucknorris 
+*   git init
+*
+* 7 git config --global --list  ~ controleaza care utilizator este conectat
+*
+* 8 git init --bare repo   ~creaza folder cu numele repo 
+*
+*-------------------------------------------------------------------------------
+*             Incepem lucru cu git
+* git config --global user.name "YourFullName"    [introducem numele nostru]
+* git config --global user.email myemail@mail.ru  [intruducem emailu nostru]
+*
+* cd d:\testgit  [ne conectam la mapa]
+*
+* get init  [aratam ca fom lucra in mapa data si se creaza o mapa ascunsa]
+*
+* git remote add test(punem orce nume dorim) __________ git silincul de pe site de proectul creat http 
+*
+* git pull test master  [extrage toate fisierele de pe net in mapa daca sunt]
+*
+* git add README.md (sau orce alt file) [adaugam file-u in mapa d:\testgit]
+*
+* git commit -m 'Hello world'(sau alt ceva) [acum tyrebue sa confirmam ca am facut schimbari in file-u adaugat]
+*
+* git push test master [acum trmitem pe server schimbarile care sau efectuat introducem loghinul si parola de pe gethub]
+
+
+
+
+====================================================
+
++git checkout HEAD filename: Discards changes in the working directory.
+	-before added and staged
+
++git reset HEAD filename: Unstages file changes in the staging area.
+
++git reset SHA(first 7 dig): Can be used to reset to a previous commit in your commit history.
+	- git log = full history
+
+
+
+MERGING 
+
+===================================================
+
+workflow.
+
++ git branch: Lists all a Git project's branches.
++ git branch branch_name: Creates a new branch.
++ git checkout branch_name: Used to switch from one branch to another.
++ git merge branch_name: Used to join file changes from one branch to another.
++ git branch -d branch_name: Deletes the branch specified.
+
+
+
+A remote is a Git repository that lives outside your Git project folder. Remotes can live on the web, on a shared network or even in a separate folder on your local computer.
+The Git Collaborative Workflow are steps that enable smooth project development when multiple collaborators are working on the same Git project.
+We also learned the following commands
+
+git clone: Creates a local copy of a remote.
+git remote -v: Lists a Git project's remotes.
+git fetch: Fetches work from the remote into the local copy.
+git merge origin/master: Merges origin/master into your local branch.
+git push origin <branch_name>: Pushes a local branch to the origin remote.
+
