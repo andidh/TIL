@@ -4,6 +4,10 @@
 * `less` - displays a paginated view of the file. You are able to scroll up and down with arrows. 
     - use /"name" to search for something (n to move to the next occurance)
 
+
+* `cut` - displays particular information
+	- `-f2,4` - return the desired fields (ex. 2,4)
+	- `-d:` - puts ":" delimiter for the output
 #Using Bash more effectively
 
 ##Overview
